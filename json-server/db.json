@@ -1,0 +1,19 @@
+{
+  "dogs": [
+    {
+      "breed": "Parson russell terrier",
+      "description": "Formando parte del grupo de los terriers, encontramos a los parson russell terrier, una variante de los conocidos jack russells. Estos graciosos y simpáticos canes destacan por su dinamismo y sus dotes para aprender nuevos trucos con el que deleitar a todos los que le rodean.",
+      "image": "https://t1.ea.ltmcdn.com/es/razas/0/4/5/img_540_parson-russell-terrier_0_300_square.jpg"
+    },
+    {
+      "breed": "Cocker spaniel americano",
+      "description": "Con un porte regio y elegante, gracias al que luce un aspecto realmente señorial, combinado con un carácter sumamente dulce y equilibrado, este animal conseguirá ganarse nuestro corazón con esa mirada tan tierna en milésimas de segundo. Estos canes resultan los compañeros ideales para todos aquellos dispuestos a brindarles su cariño.",
+      "image": "https://t1.ea.ltmcdn.com/es/razas/9/1/6/img_619_cocker-spaniel-americano_0_300_square.jpg"
+    },
+    {
+      "breed": "Bóxer",
+      "description": "El perro bóxer (Deutscher Boxer), también conocido como bóxer alemán o simplemente bóxer es una de las razas caninas de tipo moloso más populares del mundo y nace del cruce entre un Brabant bullenbeisser y un Bulldog, razas extintas actualmente. Debemos saber que la raza bóxer apareció por primera vez en Múnich (Alemania) en criadero conocido como Von Dom y que más adelante el perro bóxer fue utilizado durante la Segunda Guerra Mundial como perro de guerra mensajero, entregando cables de comunicación, y como perro ambulancia, transportando cuerpos de soldados heridos.",
+      "image": "https://t1.ea.ltmcdn.com/es/razas/0/1/1/img_110_boxer_1_300_square.jpg"
+    }
+  ]
+}

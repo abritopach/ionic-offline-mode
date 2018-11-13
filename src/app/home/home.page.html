@@ -1,12 +1,25 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>
-      Ionic Blank
+      Ionic Offline Mode Dogs Breeds App
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs">docs</a> will be your guide.</p>
+  <ion-refresher slot="fixed" (ionRefresh)="loadData(true, $event)">
+    <ion-refresher-content>
+    </ion-refresher-content>
+  </ion-refresher>
+  <ion-list>
+    <ion-item *ngFor="let dog of dogs">
+      <ion-thumbnail slot="start">
+        <img [src]="dog.image">
+      </ion-thumbnail>
+      <ion-label>
+        <h3>{{ dog.breed }}</h3>
+        <p>{{ dog.description }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>
