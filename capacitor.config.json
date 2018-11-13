@@ -1,0 +1,6 @@
+{
+  "appId": "com.offlinemode.app",
+  "appName": "ionic-offline-mode",
+  "bundledWebRuntime": false,
+  "webDir": "www"
+}

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NetworkService } from './../services/network.service';
 
 @Component({
   selector: 'app-home',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+
+  constructor(private networkService: NetworkService) {
+    console.log('HomePage::constructor() | method called');
+  }
 
 }
