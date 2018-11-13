@@ -1,0 +1,48 @@
+<ion-header>
+    <ion-toolbar color="tertiary">
+        <ion-buttons slot="end">
+            <ion-button (click)="dismiss()">
+                <ion-icon name="close" color="light"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+        <ion-title>
+          {{ modal.title }}
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <form [formGroup]="addDogForm" novalidate (ngSubmit)="addDogFormSubmit()">
+    <ion-list inset>
+        <ion-item [class.has-error]="addDogForm.get('breed').hasError('required') && addDogForm.get('breed').touched">
+          <ion-label position="floating">Breed *</ion-label>
+          <ion-input type="text" formControlName="breed" required></ion-input>
+        </ion-item>
+        <ion-item *ngIf="addDogForm.get('breed').hasError('required') && addDogForm.get('breed').touched" no-lines>
+          <div class="error-message">
+              This field is required.
+          </div>
+        </ion-item>
+        <ion-item [class.has-error]="addDogForm.get('description').hasError('required') && addDogForm.get('description').touched">
+          <ion-label position="floating">Description *</ion-label>
+          <ion-textarea formControlName="description"></ion-textarea>
+        </ion-item>
+        <ion-item *ngIf="addDogForm.get('description').hasError('required') && addDogForm.get('description').touched" no-lines>
+            <div class="error-message">
+                This field is required.
+            </div>
+        </ion-item>
+        <ion-item [class.has-error]="addDogForm.get('image').hasError('required') && addDogForm.get('image').touched">
+          <ion-label position="floating">Image *</ion-label>
+          <ion-input type="text" formControlName="image"></ion-input>
+        </ion-item>
+        <ion-item *ngIf="addDogForm.get('image').hasError('required') && addDogForm.get('image').touched" no-lines>
+            <div class="error-message">
+                This field is required.
+            </div>
+        </ion-item>
+    </ion-list>
+    <ion-button type="submit" color="primary" [disabled]='!addDogForm.valid' >{{ modal.buttonText }}</ion-button>
+    <ion-button color="danger" [disabled]='!addDogForm.valid' (click)="clearAddDogForm()">Clear</ion-button>
+    </form>
+</ion-content>
