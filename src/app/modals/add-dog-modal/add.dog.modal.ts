@@ -2,6 +2,7 @@ import { Component, ViewEncapsulation, OnInit } from '@angular/core';
 import { ModalController, NavParams } from '@ionic/angular';
 
 import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
+import { ApiService } from './../../services/api.service';
 
 @Component({
   selector: 'app-add-dog-modal',
@@ -18,7 +19,8 @@ export class AddDogModalComponent implements OnInit {
 
   addDogForm: FormGroup;
 
-  constructor(private formBuilder: FormBuilder, private modalCtrl: ModalController, public navParams: NavParams) {
+  constructor(private formBuilder: FormBuilder, private modalCtrl: ModalController, public navParams: NavParams,
+              private apiService: ApiService) {
     this.createForm();
   }
 
@@ -42,10 +44,17 @@ export class AddDogModalComponent implements OnInit {
   }
 
   addDogFormSubmit() {
+    console.log('AddDogModalComponent::addDogFormSubmit() | method called');
+    console.log(this.addDogForm.value);
+    // TODO: Add dog.
+    /*
+    this.apiService.addDog(null, this.addDogForm.value).subscribe(res => {
+    });
+    */
   }
 
   clearAddDogForm() {
-    console.log('clearAddDogForm');
+    console.log('AddDogModalComponent::clearAddDogForm() | method called');
     this.addDogForm.reset();
   }
 
