@@ -4,6 +4,8 @@ import { ModalController, NavParams } from '@ionic/angular';
 import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
 import { ApiService } from './../../services/api.service';
 
+import { v4 as uuid } from 'uuid';
+
 @Component({
   selector: 'app-add-dog-modal',
   templateUrl: 'add.dog.modal.html',
@@ -45,12 +47,12 @@ export class AddDogModalComponent implements OnInit {
 
   addDogFormSubmit() {
     console.log('AddDogModalComponent::addDogFormSubmit() | method called');
+    this.addDogForm.value.id = uuid();
     console.log(this.addDogForm.value);
     // TODO: Add dog.
-    /*
-    this.apiService.addDog(null, this.addDogForm.value).subscribe(res => {
+    this.apiService.addDog(this.addDogForm.value).subscribe(res => {
+      console.log('Added dog', res);
     });
-    */
   }
 
   clearAddDogForm() {

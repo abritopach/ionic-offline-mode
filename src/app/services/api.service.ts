@@ -36,14 +36,14 @@ export class ApiService {
     }
   }
 
-  addDog(dog, data): Observable<any> {
-    const url = `${API_URL}/dogs/${dog}`;
+  addDog(data): Observable<any> {
+    const url = `${API_URL}/dogs/`;
     if (this.networkService.getCurrentNetworkStatus() === ConnectionStatus.Offline) {
-      return from(this.offlineManager.storeRequest(url, 'PUT', data));
+      return from(this.offlineManager.storeRequest(url, 'POST', data));
     } else {
-      return this.http.put(url, data).pipe(
+      return this.http.post(url, data).pipe(
         catchError(err => {
-          this.offlineManager.storeRequest(url, 'PUT', data);
+          this.offlineManager.storeRequest(url, 'POST', data);
           throw new Error(err);
         })
       );

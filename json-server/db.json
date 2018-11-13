@@ -1,19 +1,34 @@
 {
   "dogs": [
     {
+      "id": "d9c8bc3c-9e15-4ee4-a90e-82f8eb76feb5",
       "breed": "Parson russell terrier",
       "description": "Formando parte del grupo de los terriers, encontramos a los parson russell terrier, una variante de los conocidos jack russells. Estos graciosos y simpáticos canes destacan por su dinamismo y sus dotes para aprender nuevos trucos con el que deleitar a todos los que le rodean.",
       "image": "https://t1.ea.ltmcdn.com/es/razas/0/4/5/img_540_parson-russell-terrier_0_300_square.jpg"
     },
     {
+      "id": "3280c4f4-d1e8-45b7-924f-829b773ac9c9",
       "breed": "Cocker spaniel americano",
       "description": "Con un porte regio y elegante, gracias al que luce un aspecto realmente señorial, combinado con un carácter sumamente dulce y equilibrado, este animal conseguirá ganarse nuestro corazón con esa mirada tan tierna en milésimas de segundo. Estos canes resultan los compañeros ideales para todos aquellos dispuestos a brindarles su cariño.",
       "image": "https://t1.ea.ltmcdn.com/es/razas/9/1/6/img_619_cocker-spaniel-americano_0_300_square.jpg"
     },
     {
+      "id": "3d769bd7-af9f-4d29-bf78-ef70f4c26fdd",
       "breed": "Bóxer",
       "description": "El perro bóxer (Deutscher Boxer), también conocido como bóxer alemán o simplemente bóxer es una de las razas caninas de tipo moloso más populares del mundo y nace del cruce entre un Brabant bullenbeisser y un Bulldog, razas extintas actualmente. Debemos saber que la raza bóxer apareció por primera vez en Múnich (Alemania) en criadero conocido como Von Dom y que más adelante el perro bóxer fue utilizado durante la Segunda Guerra Mundial como perro de guerra mensajero, entregando cables de comunicación, y como perro ambulancia, transportando cuerpos de soldados heridos.",
       "image": "https://t1.ea.ltmcdn.com/es/razas/0/1/1/img_110_boxer_1_300_square.jpg"
+    },
+    {
+      "id": "1c4e0acd-d9cb-488c-8c0b-be18334e8fd5",
+      "breed": "Chihuahua",
+      "description": "El chiuahua o chihuahueño es una raza de perro pequeña muy popular por su reducido tamaño. Además de ser una mascota adorable se trata de un compañero inteligente, inquieto y curioso que ofrecerá todo su amor a quienes cuiden de él.",
+      "image": "https://t2.ea.ltmcdn.com/es/razas/1/0/0/img_1_chihuahua_0_300_square.jpg"
+    },
+    {
+      "breed": "Rottweiler",
+      "description": "El rottweiler es un perro fuerte, robusto y atlético. De talla mediana a grande, y con una apariencia que no esconde su gran poder, el rottweiler inspira una enorme admiración entre sus simpatizantes y un temor casi mítico entre quienes no lo conocen. Es indudable que la sola presencia de estos perros impone respeto y es fácil asustarse de un perro tan poderoso. No en vano la raza fue la elegida para encarnar al \"perro del diablo\" en la serie de películas \"La Profecía\".",
+      "image": "https://t1.ea.ltmcdn.com/es/razas/2/1/1/img_112_rottweiler_0_300_square.jpg",
+      "id": "39c69e8e-24e1-49db-9753-64fff23e96a2"
     }
   ]
 }
