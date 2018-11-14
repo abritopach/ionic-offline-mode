@@ -2,6 +2,8 @@
 
 Sample project that shows how to build an Dogs breeds APP with offline mode that caches API data so it can be used as a fallback later. Also, we create an offline manager which stores requests made during that time so we can later send out the calls one by one when we are online again.
 
+This project is an example created in the [Devdactic Blog](https://devdactic.com/ionic-4-offline-mode/) that have been modified by me. This project has been developed to practice my skills with the tech stack shown above.
+
 This project shows you how to:
 
     * Use Capacitor in Ionic 4.
