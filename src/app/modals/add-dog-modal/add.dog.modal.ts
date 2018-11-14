@@ -49,9 +49,9 @@ export class AddDogModalComponent implements OnInit {
     console.log('AddDogModalComponent::addDogFormSubmit() | method called');
     this.addDogForm.value.id = uuid();
     console.log(this.addDogForm.value);
-    // TODO: Add dog.
     this.apiService.addDog(this.addDogForm.value).subscribe(res => {
       console.log('Added dog', res);
+      this.dismiss();
     });
   }
 

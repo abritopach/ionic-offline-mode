@@ -29,6 +29,12 @@
       "description": "El rottweiler es un perro fuerte, robusto y atlético. De talla mediana a grande, y con una apariencia que no esconde su gran poder, el rottweiler inspira una enorme admiración entre sus simpatizantes y un temor casi mítico entre quienes no lo conocen. Es indudable que la sola presencia de estos perros impone respeto y es fácil asustarse de un perro tan poderoso. No en vano la raza fue la elegida para encarnar al \"perro del diablo\" en la serie de películas \"La Profecía\".",
       "image": "https://t1.ea.ltmcdn.com/es/razas/2/1/1/img_112_rottweiler_0_300_square.jpg",
       "id": "39c69e8e-24e1-49db-9753-64fff23e96a2"
+    },
+    {
+      "breed": "Harrier",
+      "description": "El harrier es una de las razas de perros de caza más populares de Gran Bretaña y suele confundirse con el beagle y el beagle harrier, aunque uno de sus parientes mas próximos es el foxhound inglés, siendo una \"versión reducida\" de este. El perro harrier destaca como sabueso por su increíble y potente olfato, que le ha convertido actualmente en uno de los perros detectores de sustancias olorosas más cualificados.",
+      "image": "https://t2.ea.ltmcdn.com/es/razas/3/1/6/img_613_harrier_0_300_square.jpg",
+      "id": "d55857e8-4a8e-400e-958f-e305e49dec5d"
     }
   ]
 }

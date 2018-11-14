@@ -41,7 +41,9 @@ export class OfflineManagerService {
 
     for (const op of operations) {
       console.log('Make one request: ', op);
-      const oneObs = this.http.request(op.type, op.url, op.data);
+      const data = JSON.stringify(op.data);
+      console.log('JSON.stringify(op.data)', data);
+      const oneObs = this.http.request(op.type, op.url, {body: op.data});
       obs.push(oneObs);
     }
 

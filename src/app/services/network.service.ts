@@ -17,7 +17,7 @@ export enum ConnectionStatus {
 export class NetworkService {
 
   private status: BehaviorSubject<ConnectionStatus> = new BehaviorSubject(ConnectionStatus.Offline);
-  private loading: any;
+  private loading: any = null;
 
   constructor(private toastController: ToastController, private loadingCtrl: LoadingController) {
     console.log('NetworkService::constructor | method called');
@@ -97,8 +97,10 @@ export class NetworkService {
   }
 
   private async dismissLoading() {
-    this.loading.dismiss();
-    this.loading = null;
+    if ((this.loading !== null) && (typeof this.loading !== 'undefined')) {
+      this.loading.dismiss();
+      this.loading = null;
+    }
   }
 
 }
